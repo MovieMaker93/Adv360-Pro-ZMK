@@ -129,11 +129,11 @@ ggrave: grave_grave {
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp skp_n1   &kp lkp_n2  &kp lkp_n3  &kp lkp_n4     &kp hkp_n5  &tog 2                                                           &mo 4 &kp ckp_n6  &kp rkp_n7  &kp rkp_n8     &kp rkp_n9   &kp dkp_n0   &kp MINUS
+        &kp EQUAL &skp_n1   &lkp_n2  &lkp_n3  &lkp_n4     &hkp_n5  &tog 2                                                           &mo 4 &ckp_n6  &rkp_n7  &rkp_n8     &rkp_n9   &dkp_n0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI             &none &kp H  &kp J  &kp K     &kp L    &kp COLON &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp LSHFT &kp RSHFT                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp ggrave &kp p_at  &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp a_percent  &kp EXCLAMATION  &mo 2
+        &mo 2     &ggrave &p_at  &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &a_percent  &kp EXCLAMATION  &mo 2
       >;
     }; 
     shift_layer {
