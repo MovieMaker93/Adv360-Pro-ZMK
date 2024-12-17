@@ -30,6 +30,98 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+skp_n1: star_kp_n1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "plus_kp_n1";
+    #binding-cells = <0>;
+    bindings = <&kp STAR>, <&kp KP_N1>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+lkp_n2: left_bracket_kp_n2 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "left_bracket_kp_n2";
+    #binding-cells = <0>;
+    bindings = <&kp LEFT_BRACKET>, <&kp KP_N2>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+lkp_n3: left_brace_kp_n3 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "left_brace_kp_n3";
+    #binding-cells = <0>;
+    bindings = <&kp LEFT_BRACE>, <&kp KP_N3>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+lkp_n4: left_parenthesis_kp_n4 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "left_parenthesis_kp_n4";
+    #binding-cells = <0>;
+    bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_N4>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+hkp_n5: hash_kp_n5 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "amps_kp_n5";
+    #binding-cells = <0>;
+    bindings = <&kp HASH>, <&kp KP_N5>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+ckp_n6: caret_kp_n6 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "equal_kp_n6";
+    #binding-cells = <0>;
+    bindings = <&kp CARET>, <&kp KP_N6>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+rkp_n7: right_parenthesis_kp_n7 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "right_parenthesis_kp_n7";
+    #binding-cells = <0>;
+    bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_N7>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+rkp_n8: right_brace_kp_n8 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "right_brace_kp_n8";
+    #binding-cells = <0>;
+    bindings = <&kp RIGHT_BRACE>, <&kp KP_N8>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+rkp_n9: right_bracket_kp_n9 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "right_bracket_kp_n9";
+    #binding-cells = <0>;
+    bindings = <&kp RIGHT_BRACKET>, <&kp KP_N9>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+dkp_n0: dollar_kp_n0 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "star_kp_n0";
+    #binding-cells = <0>;
+    bindings = <&kp DOLLAR>, <&kp KP_N0>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+pat: percent_at {
+    compatible = "zmk,behavior-mod-morph";
+    label = "percent_at";
+    #binding-cells = <0>;
+    bindings = <&kp PRCNT>, <&kp AT>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+apercent: ampersand_percent {
+    compatible = "zmk,behavior-mod-morph";
+    label = "ampersand_percent";
+    #binding-cells = <0>;
+    bindings = <&kp AMPERSAND>, <&kp PRCNT>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+ggrave: grave_grave {
+    compatible = "zmk,behavior-mod-morph";
+    label = "grave_grave";
+    #binding-cells = <0>;
+    bindings = <&kp GRAVE>, <&kp GRAVE>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
     };
  
   keymap {
@@ -37,11 +129,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp STAR   &kp LBKT  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS     &kp HASH  &tog 2                                                           &mo 4 &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE     &kp RBKT   &kp DOLLAR   &kp MINUS
+        &kp EQUAL &kp skp_n1   &kp lkp_n2  &kp lkp_n3  &kp lkp_n4     &kp hash_kp_n5  &tog 2                                                           &mo 4 &kp ckp_n6  &kp rkp_n7  &kp rkp_n8     &kp rkp_n9   &kp dkp_n0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &tog 1   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI             &none &kp H  &kp J  &kp K     &kp L    &kp COLON &kp SQT
-        &lt 1 LSHIFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &lt 1 LSHIFT &kp RSHFT                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp PERCENT  &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp AMPERSAND  &kp EXCLAMATION  &mo 2
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI             &none &kp H  &kp J  &kp K     &kp L    &kp COLON &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp LSHFT &kp RSHFT                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &kp ggrave &kp percent_at  &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp apercent  &kp EXCLAMATION  &mo 2
       >;
     }; 
     shift_layer {
