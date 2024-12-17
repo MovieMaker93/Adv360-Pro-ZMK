@@ -35,70 +35,70 @@ skp_n1: star_kp_n1 {
     compatible = "zmk,behavior-mod-morph";
     label = "star_kp_n1";
     #binding-cells = <0>;
-    bindings = <&kp STAR>, <&kp KP_N1>;
+    bindings = <&kp STAR>, <&kp N1>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 lkp_n2: left_bracket_kp_n2 {
     compatible = "zmk,behavior-mod-morph";
     label = "left_bracket_kp_n2";
     #binding-cells = <0>;
-    bindings = <&kp LEFT_BRACKET>, <&kp KP_N2>;
+    bindings = <&kp LEFT_BRACKET>, <&kp N2>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 lkp_n3: left_brace_kp_n3 {
     compatible = "zmk,behavior-mod-morph";
     label = "left_brace_kp_n3";
     #binding-cells = <0>;
-    bindings = <&kp LEFT_BRACE>, <&kp KP_N3>;
+    bindings = <&kp LEFT_BRACE>, <&kp N3>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 lkp_n4: left_parenthesis_kp_n4 {
     compatible = "zmk,behavior-mod-morph";
     label = "left_parenthesis_kp_n4";
     #binding-cells = <0>;
-    bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_N4>;
+    bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 hkp_n5: hash_kp_n5 {
     compatible = "zmk,behavior-mod-morph";
     label = "hash_kp_n5";
     #binding-cells = <0>;
-    bindings = <&kp HASH>, <&kp KP_N5>;
+    bindings = <&kp HASH>, <&kp N5>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 ckp_n6: caret_kp_n6 {
     compatible = "zmk,behavior-mod-morph";
     label = "caret_kp_n6";
     #binding-cells = <0>;
-    bindings = <&kp CARET>, <&kp KP_N6>;
+    bindings = <&kp CARET>, <&kp N6>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 rkp_n7: right_parenthesis_kp_n7 {
     compatible = "zmk,behavior-mod-morph";
     label = "right_parenthesis_kp_n7";
     #binding-cells = <0>;
-    bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_N7>;
+    bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 rkp_n8: right_brace_kp_n8 {
     compatible = "zmk,behavior-mod-morph";
     label = "right_brace_kp_n8";
     #binding-cells = <0>;
-    bindings = <&kp RIGHT_BRACE>, <&kp KP_N8>;
+    bindings = <&kp RIGHT_BRACE>, <&kp N8>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 rkp_n9: right_bracket_kp_n9 {
     compatible = "zmk,behavior-mod-morph";
     label = "right_bracket_kp_n9";
     #binding-cells = <0>;
-    bindings = <&kp RIGHT_BRACKET>, <&kp KP_N9>;
+    bindings = <&kp RIGHT_BRACKET>, <&kp N9>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 dkp_n0: dollar_kp_n0 {
     compatible = "zmk,behavior-mod-morph";
     label = "dollar_kp_n0";
     #binding-cells = <0>;
-    bindings = <&kp DOLLAR>, <&kp KP_N0>;
+    bindings = <&kp DOLLAR>, <&kp N0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 p_at: percent_kp_at {
