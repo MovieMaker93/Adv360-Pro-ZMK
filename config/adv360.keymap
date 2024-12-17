@@ -129,20 +129,20 @@ ggrave: grave_grave {
 
     default_layer {
       bindings = <
-        &kp EQUAL &skp_n1   &lkp_n2  &lkp_n3  &lkp_n4     &hkp_n5  &tog 2                                                           &mo 4 &ckp_n6  &rkp_n7  &rkp_n8     &rkp_n9   &dkp_n0   &kp MINUS
+        &kp EQUAL &skp_n1   &lkp_n2  &lkp_n3  &lkp_n4     &hkp_n5  &tog 1                                                          &mo 4 &ckp_n6  &rkp_n7  &rkp_n8     &rkp_n9   &dkp_n0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI             &none &kp H  &kp J  &kp K     &kp L    &kp COLON &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp LSHFT &kp RSHFT                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &ggrave &p_at  &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &a_percent  &kp EXCLAMATION  &mo 2
       >;
     }; 
-    shift_layer {
+    qwerty_layer {
        bindings = <
-        &kp PLUS &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 2                                                           &mo 4 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp UNDER
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp PIPE
-        &tog 1   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp DOUBLE_QUOTES
-        &lt 1 LSHIFT  &kp Z     &kp X    &kp C    &kp V      &kp B                            &lt 1 LSHIFT &kp RSHFT                           &kp N  &kp M  &kp LESS_THAN &kp GREATER_THAN  &kp QUESTION &kp RSHFT
-        &mo 2     &kp GRAVE &kp AT &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp PERCENT &kp AT &mo 2
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LALT &kp DEL &kp RCTRL  &kp LGUI           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp RSHFT                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp ESC  &kp ESC &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
